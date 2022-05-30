@@ -26,7 +26,7 @@
     width:  35px;
     position: relative;
     transition: all ease-in-out 200ms;
-    animation: upDown 1200ms infinite linear;
+    animation: upDown 1500ms infinite linear;
     bottom: 0;
     cursor: pointer;
 }

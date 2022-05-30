@@ -18,7 +18,7 @@ const GetInTouch = () => {
           <div>
             <div style={{ fontSize: "14px", letterSpacing: "2px" }}>EMAIL</div>
             <div style={{ fontSize: "14px", letterSpacing: "2px" }}>
-              info@mhventures.io
+              fund@marjan.capital
             </div>
           </div>
         </div>

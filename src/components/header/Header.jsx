@@ -21,11 +21,11 @@ const Header = () => {
         <div className=' col-2 d-flex align-items-center'><img className='header-logo' src={headerLogo} alt="header logo"/></div>
         <div className='nav-items-container text-color-white  container-fluid col-10 d-flex justify-content-end align-items-center'>
                 <div className=' nav-item'>Home</div>
-                <div className=' nav-item'>About Us</div>
+                <div className=' nav-item'>About</div>
                 <div className=' nav-item'>Portfolio</div>
-                <div className=' nav-item'>Themes</div>
-                <div className=' nav-item'>Blogs</div>
-                <div className=' nav-item'>Contact Us</div>
+                <div className=' nav-item'>Team</div>
+                <div className=' nav-item'>Media</div>
+                <div className=' nav-item'>Contact</div>
         </div>
     </div>
   )
