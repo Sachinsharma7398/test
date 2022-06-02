@@ -11,7 +11,7 @@ import { MdEmail } from "react-icons/md";
 
 const Team = () => {
   return (
-    <div className="perfomers-section">
+    <div className="perfomers-section" id="team">
       <div className="perfomers-heading text-color-white">Our team</div>
       <div className="teams-items-container d-flex   text-color-white">
         <div className="teamItem">

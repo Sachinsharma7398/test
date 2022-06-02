@@ -30,7 +30,7 @@
     bottom: 0;
     cursor: pointer;
 }
-.banner-down > img{
+.banner-down >a > img{
     width: 100% ;
     height: 100%;
 

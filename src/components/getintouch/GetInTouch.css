@@ -1,12 +1,11 @@
-
-.parentGet{
-  background: url('./../../assets//images/formBackground.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
+.parentGet {
+  background: url("./../../assets//images/formBackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
   border-top: 0.5px solid #6b6b6b;
-
+  filter: contrast(200%);
 }
 .get-in-touch {
   padding-bottom: 90px;
@@ -16,7 +15,7 @@
 }
 
 .get-in-touch-heading {
-  font-size: 25px;
+  font-size: 32px;
   line-height: 1em;
   font-weight: 900;
   text-align: center;
@@ -31,14 +30,12 @@
 }
 
 @media (max-width: 1300px) {
-  .name-container{
+  .name-container {
     margin-bottom: 20px;
   }
 }
-@media (max-width: 848px) {
- 
-  .get-in-touch{
-    padding-top: 20px;
+@media (max-width: 888px) {
+  .get-in-touch {
+    padding-top: 50px;
   }
- 
 }

@@ -5,11 +5,11 @@ import Launch from "../launch/Launch";
 
 const GetInTouch = () => {
   return (
-    <div className="row parentGet">
-      <div className="col-sm-7 col-lg-6">
+    <div className="row parentGet" id="contact">
+      <div className="col-sm-12 col-lg-6">
         <Launch/>
       </div>
-      <div className=" col-sm-7 col-lg-6 ">
+      <div className=" col-sm-12 col-lg-6 ">
       <div className="get-in-touch  text-color-white">
       <div className="get-in-touch-heading ">get in touch</div>
       <div className="row form-wrap">

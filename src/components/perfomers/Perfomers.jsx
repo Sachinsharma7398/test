@@ -4,7 +4,7 @@ import portfolioItemImage from "../../assets/images/portfolioItem.jpeg";
 
 const Perfomers = () => {
   return (
-    <div className="perfomers-section">
+    <div className="perfomers-section" id="portfolio">
       <div className="perfomers-heading text-color-white">Portfolio</div>
       <div className="perfomers-items-container d-flex   text-color-white">
 

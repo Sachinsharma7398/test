@@ -8,7 +8,7 @@ import Countup from 'react-countup'
 
 const About = () => {
   return (
-    <div className="about-container w-100 d-flex align-items-center justify-content-center flex-column">
+    <div className="about-container w-100 d-flex align-items-center justify-content-center flex-column" id="about">
       <div className="about-heading text-color-white">
         Early stage private venture capital fund investing into the best
         blockchain projects in the emerging digital asset economy.
