@@ -1,24 +1,29 @@
 .launch-container{
+    display: flex;
     width: 100%;
-    
     padding: 70px 0px;
     text-align: center;
     margin-top: 113px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 43px;
 }
 
 .launch-heading{
     margin-bottom: 20px;
-    font-size: 32px;
+    font-size: 30px;
     line-height: 1.1em;
     font-weight: 500;
     letter-spacing: 5px;
     text-transform: uppercase;
     text-align: center;
+    font-weight: bolder;
 }
 
 .launch-para{
-    max-width: 420px;
-    font-size: 18px;
+    max-width: 576px;
+    font-size: 25px;
     line-height: 1.4em;
     font-weight: 300;
     text-align: center;

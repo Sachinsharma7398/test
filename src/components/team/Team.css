@@ -12,14 +12,15 @@
     letter-spacing: 5px;
     text-transform: uppercase;
     margin-bottom: 80px;
+    font-weight: bold;
   }
   
   .teams-items-container {
-    width: 90%;
+    width: 75%;
     /* max-width: 1220px; */
     margin: 0px auto;
     margin-top: 50px;
-    gap: 185px; ;
+    gap: 70px;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -57,7 +58,7 @@
   
   
   .teamItemImg{
-    width: 250px;
+    width: 195px;
     overflow: hidden;
   }
   .teamItemImg > img{

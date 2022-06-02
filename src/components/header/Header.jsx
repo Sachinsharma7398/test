@@ -9,6 +9,10 @@ const Header = () => {
     window.addEventListener("scroll", scrollCheck);
   }, []);
 
+  const opennewtab = (url) => {
+    window.open(url);
+  };
+
   const scrollCheck = (e) => {
     let scrollTop = window.scrollY;
     scrollTop > 50 ? setScroll(true) : setScroll(false);
@@ -29,19 +33,38 @@ const Header = () => {
           </a>
         </div>
         <div className=" nav-item">
-          <a href="#about" style={{ color: "inherit", textDecoration: "none" }}>About</a>
+          <a href="#about" style={{ color: "inherit", textDecoration: "none" }}>
+            About
+          </a>
         </div>
         <div className=" nav-item">
-          <a href="#portfolio" style={{ color: "inherit", textDecoration: "none" }}>Portfolio</a>
+          <a
+            href="#portfolio"
+            style={{ color: "inherit", textDecoration: "none" }}
+          >
+            Portfolio
+          </a>
         </div>
         <div className=" nav-item">
-          <a  href="#team" style={{ color: "inherit", textDecoration: "none" }}>Team</a>
+          <a href="#team" style={{ color: "inherit", textDecoration: "none" }}>
+            Team
+          </a>
         </div>
         <div className=" nav-item">
-          <a href="#media" style={{ color: "inherit", textDecoration: "none" }}>Media</a>
+          <a
+            onClick={()=> opennewtab("https://medium.com/@marjancapital")}
+            style={{ color: "inherit", textDecoration: "none",cursor:"pointer" }}
+          >
+            Media
+          </a>
         </div>
         <div className=" nav-item">
-          <a href="#contact" style={{ color: "inherit", textDecoration: "none" }}>Contact</a>
+          <a
+            href="#contact"
+            style={{ color: "inherit", textDecoration: "none" }}
+          >
+            Contact
+          </a>
         </div>
       </div>
     </div>
