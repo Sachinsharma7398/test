@@ -14,7 +14,7 @@ const About = () => {
         blockchain projects in the emerging digital asset economy.
       </div>
       <div className="about-count-container text-center row text-color-white">
-        <div className="col-lg-3 col-md-6 about-count-item d-flex justify-content-center align-items-center flex-column">
+        <div className="col-lg-3  col-sm-4  col-md-6 about-count-item d-flex justify-content-center align-items-center flex-column">
           <div className="abount-count-item-number"><Countup duration={7} end ={150}/>+</div>
           <div
             className="abount-count-item-heading"
@@ -22,9 +22,9 @@ const About = () => {
           >
             PORTFOLIO
           </div>
-          <div className="abount-count-item-heading">Projects</div>
+          <div className="abount-count-item-heading bottom-space">Projects</div>
         </div>
-        <div className="col-lg-3 col-md-6 about-count-item d-flex justify-content-center align-items-center flex-column">
+        <div className=" col-sm-4  col-lg-3 col-md-6 about-count-item d-flex justify-content-center align-items-center flex-column">
           <div className="abount-count-item-number"><Countup duration={7} end ={200}/>+</div>
           <div
             className="abount-count-item-heading"
@@ -32,9 +32,9 @@ const About = () => {
           >
             Private
           </div>
-          <div className="abount-count-item-heading">Investments</div>
+          <div className="abount-count-item-heading bottom-space">Investments</div>
         </div>
-        <div className="col-lg-3 col-md-6 about-count-item d-flex justify-content-center align-items-center flex-column">
+        <div className="col-sm-4  col-lg-3 col-md-6 about-count-item d-flex justify-content-center align-items-center flex-column">
           <div className="abount-count-item-number"><Countup duration={7} end ={190}/>+</div>
           <div
             className="abount-count-item-heading"
@@ -42,9 +42,9 @@ const About = () => {
           >
             Community
           </div>
-          <div className="abount-count-item-heading">Members</div>
+          <div className="abount-count-item-heading bottom-space">Members</div>
         </div>
-        <div className="col-lg-3 col-md-6  about-count-item d-flex justify-content-center align-items-center flex-column">
+        <div className="col-lg-3 col-sm-4  col-md-6  about-count-item d-flex justify-content-center align-items-center flex-column">
           <div className="abount-count-item-number"><Countup duration={7} end ={237}/>+</div>
           <div
             className="abount-count-item-heading"
@@ -52,7 +52,7 @@ const About = () => {
           >
             Strategic
           </div>
-          <div className="abount-count-item-heading">Partners</div>
+          <div className="abount-count-item-heading bottom-space">Partners</div>
         </div>
       </div>
       <div className="about-mh-ventures text-center text-color-white">
