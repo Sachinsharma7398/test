@@ -14,14 +14,14 @@
     margin-bottom: 80px;
   }
   
-  .perfomers-items-container {
+  .teams-items-container {
     width: 90%;
     /* max-width: 1220px; */
     margin: 0px auto;
     margin-top: 50px;
-    gap: 40px; ;
+    gap: 185px; ;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
   }
   
   .perfomers-item {
@@ -96,12 +96,23 @@
   }
   
   
-  @media (max-width: 1350px) {
-    .perfomers-items-container{
-      justify-content: space-evenly;
+
+  @media (max-width: 848px) {
+ 
+    .teams-items-container{
+        gap: 70px;
+    }
+   
+  }
+
+  
+  @media (max-width: 400px) {
+    .teams-items-container{
+      gap:65px
     }
   }
-  
+
+
   
   
   

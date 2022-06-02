@@ -13,7 +13,7 @@ const Team = () => {
   return (
     <div className="perfomers-section">
       <div className="perfomers-heading text-color-white">Our team</div>
-      <div className="perfomers-items-container d-flex   text-color-white">
+      <div className="teams-items-container d-flex   text-color-white">
         <div className="teamItem">
           <div className="teamItemImg">
           <img src={team1} alt="text" />

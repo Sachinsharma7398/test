@@ -4,59 +4,75 @@ import HorseSvg from "../../assets/svgs/horse.svg";
 import PersonSvg from "../../assets/svgs/person.svg";
 import HeartSvg from "../../assets/svgs/heart.svg";
 import PencilSvg from "../../assets/svgs/pencil.svg";
+import Countup from 'react-countup'
 
 const About = () => {
   return (
     <div className="about-container w-100 d-flex align-items-center justify-content-center flex-column">
       <div className="about-heading text-color-white">
-        A GOLD STANDARD COMMUNITY-BACKED INVESTMENT GROUP, SUPPORTING ONLY THE
-        BEST BLOCKCHAIN PROJECTS.
+        Early stage private venture capital fund investing into the best
+        blockchain projects in the emerging digital asset economy.
       </div>
       <div className="about-count-container text-center row text-color-white">
         <div className="col-lg-3 col-md-6 about-count-item d-flex justify-content-center align-items-center flex-column">
-          <div className="abount-count-item-number">150+</div>
+          <div className="abount-count-item-number"><Countup duration={7} end ={150}/>+</div>
           <div
             className="abount-count-item-heading"
             style={{ marginTop: "5px" }}
           >
             PORTFOLIO
           </div>
-          <div className="abount-count-item-heading">PORTFOLIO</div>
+          <div className="abount-count-item-heading">Projects</div>
         </div>
         <div className="col-lg-3 col-md-6 about-count-item d-flex justify-content-center align-items-center flex-column">
-          <div className="abount-count-item-number">150+</div>
+          <div className="abount-count-item-number"><Countup duration={7} end ={200}/>+</div>
           <div
             className="abount-count-item-heading"
             style={{ marginTop: "5px" }}
           >
-            PORTFOLIO
+            Private
           </div>
-          <div className="abount-count-item-heading">PORTFOLIO</div>
+          <div className="abount-count-item-heading">Investments</div>
         </div>
         <div className="col-lg-3 col-md-6 about-count-item d-flex justify-content-center align-items-center flex-column">
-          <div className="abount-count-item-number">150+</div>
+          <div className="abount-count-item-number"><Countup duration={7} end ={190}/>+</div>
           <div
             className="abount-count-item-heading"
             style={{ marginTop: "5px" }}
           >
-            PORTFOLIO
+            Community
           </div>
-          <div className="abount-count-item-heading">PORTFOLIO</div>
+          <div className="abount-count-item-heading">Members</div>
         </div>
         <div className="col-lg-3 col-md-6  about-count-item d-flex justify-content-center align-items-center flex-column">
-          <div className="abount-count-item-number">150+</div>
+          <div className="abount-count-item-number"><Countup duration={7} end ={237}/>+</div>
           <div
             className="abount-count-item-heading"
             style={{ marginTop: "5px" }}
           >
-            PORTFOLIO
+            Strategic
           </div>
-          <div className="abount-count-item-heading">PORTFOLIO</div>
+          <div className="abount-count-item-heading">Partners</div>
         </div>
       </div>
-      {/* <div className="about-mh-ventures text-center text-color-white">
-        ABOUT MH VENTURES
-      </div> */}
+      <div className="about-mh-ventures text-center text-color-white">
+        ABOUT Us
+      </div>
+      <p className="text-color-white about-para">
+        Marjan Capital is a private venture capital fund based out of United
+        Arab Emirates with keen focus on investments around emerging
+        digital-tech & blockchain projects across the globe.​ 
+      </p>
+      <p className="text-color-white about-para">
+      At Marjan, we are
+        very excited about the future growth of blockchain technologies & its
+        evolving ecosystem. ​We actively invest in early-stage blockchain
+        projects & are always looking for the next big idea. 
+      </p>
+      <p className="text-color-white about-para">
+      Send us your
+        project details on fund@marjan.capital
+      </p>
       {/* <div className="row about-details-container text-color-white">
         <div className="col-lg-3 about-detail-item d-flex flex-column justify-content-center align-items-center">
           <div className="about-detail-item-img-container">

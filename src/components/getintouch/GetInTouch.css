@@ -1,6 +1,6 @@
 
 .parentGet{
-  background: url('./../../assets//images/shutterstock.jpg');
+  background: url('./../../assets//images/formBackground.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -34,4 +34,11 @@
   .name-container{
     margin-bottom: 20px;
   }
+}
+@media (max-width: 848px) {
+ 
+  .get-in-touch{
+    padding-top: 20px;
+  }
+ 
 }

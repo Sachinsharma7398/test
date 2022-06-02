@@ -6,14 +6,14 @@ import Launch from "../launch/Launch";
 const GetInTouch = () => {
   return (
     <div className="row parentGet">
-      <div className="col-6">
+      <div className="col-sm-7 col-lg-6">
         <Launch/>
       </div>
-      <div className="col-6">
+      <div className=" col-sm-7 col-lg-6 ">
       <div className="get-in-touch  text-color-white">
       <div className="get-in-touch-heading ">get in touch</div>
       <div className="row form-wrap">
-        <div className="col-12 my-3 d-flex gap-2">
+        <div className="col-12 my-3 d-flex gap-2 ">
           <img width="45px" src={messageIcon} alt="message" />
           <div>
             <div style={{ fontSize: "14px", letterSpacing: "2px" }}>EMAIL</div>

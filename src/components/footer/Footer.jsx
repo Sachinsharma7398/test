@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import logo from "../../assets/images/marjan logo.png";
+import logo from '../../assets/images/headerLogo.png';
 import twitterLogo from '../../assets/svgs/twitter.svg'
 import telegramLogo from '../../assets/svgs/telegram.svg'
 import messageLogo from '../../assets/svgs/message.svg'
