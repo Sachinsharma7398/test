@@ -25,6 +25,7 @@ background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
     font-size: 30px;
     right:25px;
     color: white;
+    cursor: pointer;
 }
 
 .item{
@@ -33,4 +34,5 @@ background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
     color: #f2f2f2;
     text-transform: uppercase;
     font-weight: bolder;
+    cursor: pointer;
 }
