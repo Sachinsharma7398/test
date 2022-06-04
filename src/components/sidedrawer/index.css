@@ -1,0 +1,36 @@
+.sideDrawer{
+    background-color: #000000;
+background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+        height: 100vh;
+    z-index: 9999999;
+    padding-top: 100px;
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 200ms ease;
+    gap: 20px;
+    flex-direction: column;
+    width: 50%;
+    margin-left: auto;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.close{
+    position: absolute;
+    top: 20px;
+    font-size: 30px;
+    right:25px;
+    color: white;
+}
+
+.item{
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    font-weight: bolder;
+}

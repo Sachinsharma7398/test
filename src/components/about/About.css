@@ -102,9 +102,21 @@
     padding: 0px 20px;
   }
 
+  .abount-count-item-number {
+    font-size: 30px;
+    font-weight: 900;
+}
+.abount-count-item-heading{
+  font-size: 15px;
+}
   .about-mh-ventures {
-    font-size: 16px;
+    font-size: 25px;
   }
+  .about-para {
+  
+    font-size: 20px;
+    
+}
 
   .bottom-space {
     margin-bottom: 20px;

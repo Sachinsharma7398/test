@@ -58,10 +58,18 @@
     
 
   }
+@media (max-width: 800px) {
+
+    .launch-para{
+        margin-bottom: 10px;
+    }
+    
+
+  }
 
 @media (max-width: 598px) {
     .launch-heading{
-        font-size: 18px;
+        font-size: 22px;
         padding-left: 10px;
         padding-right: 10px;
     }

@@ -105,11 +105,98 @@
     }
    
   }
+  @media (max-width: 750px) {
+    .perfomers-heading{
+      font-size: 25px;
+    }
+    .teams-items-container{
+      gap: 20px;
+  }
+
+
+   
+  }
+  @media (max-width: 720px) {
+    
+    .teamItemImg {
+      width: 150px;
+  }
+
+    .teamItem > .name{
+      font-size: 25px;
+       width: 150px; 
+       overflow: hidden;
+       white-space: nowrap; 
+       text-overflow: ellipsis;
+    }
+    .teamItem > .post{
+      font-size: 25px;
+      width: 150px; 
+      overflow: hidden;
+      white-space: nowrap; 
+      text-overflow: ellipsis;
+    }
+    .teams-items-container{
+      gap: 20px;
+  }
+
+
+   
+  }
 
   
+  @media (max-width: 684px) {
+    .teamItem > .name{
+      font-size: 20px;
+    }
+    .teamItem > .post{
+      font-size: 20px;
+    }
+
+  }
+  @media (max-width: 600px) {
+    .teamItem > .post{
+      font-size: 20px;
+      width: 150px; 
+      overflow: hidden;
+      white-space: nowrap; 
+      text-overflow: ellipsis;
+    }
+    .teamItem > .name{
+      font-size: 20px;
+      width: 150px; 
+      overflow: hidden;
+      white-space: nowrap; 
+      text-overflow: ellipsis;
+    }
+
+  }
+  @media (max-width: 550px) {
+    .teamItem > .post{
+      font-size: 20px;
+      width: 100px; 
+      overflow: hidden;
+      white-space: nowrap; 
+      text-overflow: ellipsis;
+    }
+    .teamItem > .name{
+      font-size: 20px;
+      width: 100px; 
+      overflow: hidden;
+      white-space: nowrap; 
+      text-overflow: ellipsis;
+    }
+
+  }
+  @media (max-width: 535px) {
+  .teamItemImg{
+    width: 120px;
+  }
+
+  }
   @media (max-width: 400px) {
     .teams-items-container{
-      gap:65px
+      gap:20px
     }
   }
 

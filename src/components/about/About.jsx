@@ -14,7 +14,7 @@ const About = () => {
         blockchain projects in the emerging digital asset economy.
       </div>
       <div className="about-count-container text-center row text-color-white">
-        <div className="col-lg-3  col-sm-4  col-md-6 about-count-item d-flex justify-content-center align-items-center flex-column">
+        <div className="col-lg-3  col-sm-6 col-6 col-md-6 about-count-item d-flex justify-content-center align-items-center flex-column">
           <div className="abount-count-item-number"><Countup duration={7} end ={150}/>+</div>
           <div
             className="abount-count-item-heading"
@@ -24,7 +24,7 @@ const About = () => {
           </div>
           <div className="abount-count-item-heading bottom-space">Projects</div>
         </div>
-        <div className=" col-sm-4  col-lg-3 col-md-6 about-count-item d-flex justify-content-center align-items-center flex-column">
+        <div className=" col-sm-6 col-6 col-lg-3 col-md-6 about-count-item d-flex justify-content-center align-items-center flex-column">
           <div className="abount-count-item-number"><Countup duration={7} end ={200}/>+</div>
           <div
             className="abount-count-item-heading"
@@ -34,7 +34,7 @@ const About = () => {
           </div>
           <div className="abount-count-item-heading bottom-space">Investments</div>
         </div>
-        <div className="col-sm-4  col-lg-3 col-md-6 about-count-item d-flex justify-content-center align-items-center flex-column">
+        <div className="col-sm-6 col-6 col-lg-3 col-md-6 about-count-item d-flex justify-content-center align-items-center flex-column">
           <div className="abount-count-item-number"><Countup duration={7} end ={190}/>+</div>
           <div
             className="abount-count-item-heading"
@@ -44,7 +44,7 @@ const About = () => {
           </div>
           <div className="abount-count-item-heading bottom-space">Members</div>
         </div>
-        <div className="col-lg-3 col-sm-4  col-md-6  about-count-item d-flex justify-content-center align-items-center flex-column">
+        <div className="col-lg-3 col-sm-6 col-6 col-md-6  about-count-item d-flex justify-content-center align-items-center flex-column">
           <div className="abount-count-item-number"><Countup duration={7} end ={237}/>+</div>
           <div
             className="abount-count-item-heading"

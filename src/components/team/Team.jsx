@@ -18,7 +18,7 @@ const Team = () => {
           <div className="teamItemImg">
           <img src={team1} alt="text" />
           </div>
-          <h2 className="name">Rahul sharma</h2>
+          <h2 className="name"  >Rahul sharma</h2>
           <h2 className="post">Manager</h2>
           <div className="tele">
             <FaTelegramPlane className="teleIcon icon" size={28} color="#ffffff" />
@@ -29,7 +29,7 @@ const Team = () => {
           <div className="teamItemImg">
           <img src={up} alt="text" />
           </div>
-          <h2 className="name">emran</h2>
+          <h2 className="name" >emran</h2>
           <h2 className="post">Manager</h2>
           <div className="tele">
             <FaTelegramPlane className="teleIcon" size={28} color="#ffffff" />
@@ -40,7 +40,7 @@ const Team = () => {
           <div className="teamItemImg">
           <img src={long} alt="text" />
           </div>
-          <h2 className="name">katty</h2>
+          <h2 className="name" >katty</h2>
           <h2 className="post">Manager</h2>
           <div className="tele">
             <FaTelegramPlane className="teleIcon" size={28} color="#ffffff" />
@@ -51,7 +51,7 @@ const Team = () => {
           <div className="teamItemImg">
           <img src={girl} alt="text" />
           </div>
-          <h2 className="name">julia</h2>
+          <h2 className="name" >julia</h2>
           <h2 className="post">Manager</h2>
           <div className="tele">
             <FaTelegramPlane className="teleIcon" size={28} color="#ffffff" />
@@ -62,7 +62,7 @@ const Team = () => {
           <div className="teamItemImg">
           <img src={team1} alt="text" />
           </div>
-          <h2 className="name">Rahul sharma</h2>
+          <h2 className="name" >Rahul sharma</h2>
           <h2 className="post">Manager</h2>
           <div className="tele">
             <FaTelegramPlane className="teleIcon icon" size={28} color="#ffffff" />
@@ -73,7 +73,7 @@ const Team = () => {
           <div className="teamItemImg">
           <img src={up} alt="text" />
           </div>
-          <h2 className="name">Rahul sharma</h2>
+          <h2 className="name" >Rahul sharma</h2>
           <h2 className="post">Manager</h2>
           <div className="tele">
             <FaTelegramPlane className="teleIcon" size={28} color="#ffffff" />
@@ -84,7 +84,7 @@ const Team = () => {
           <div className="teamItemImg">
           <img src={long} alt="text" />
           </div>
-          <h2 className="name">Rahul sharma</h2>
+          <h2 className="name" >Rahul sharma</h2>
           <h2 className="post">Manager</h2>
           <div className="tele">
             <FaTelegramPlane className="teleIcon" size={28} color="#ffffff" />
@@ -95,7 +95,7 @@ const Team = () => {
           <div className="teamItemImg">
           <img src={girl} alt="text" />
           </div>
-          <h2 className="name">Rahul sharma</h2>
+          <h2 className="name" >Rahul sharma</h2>
           <h2 className="post">Manager</h2>
           <div className="tele">
             <FaTelegramPlane className="teleIcon" size={28} color="#ffffff" />

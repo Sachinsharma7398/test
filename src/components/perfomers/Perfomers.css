@@ -65,17 +65,16 @@
 
 
 
-/* @media (max-width: 1300px) {
+ @media (max-width: 750px) {
+
+  .perfomers-heading {
+    font-size: 25px;
+  }
   .perfomers-items-container{
-    flex-wrap: wrap;
-    gap: 120px;
+    width: 90%;
+  }
+  .portfolioItem{
+    width: 200px;
+    height: 125px;
   }
 }
-@media (max-width: 970px) {
-  .perfomers-item-img-container{
-    width: 200px;
-    height: 180px;
-    margin-top: -75px;
-    margin-bottom: 10px;
-  }
-} */
