@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./index.css";
-import { GrClose } from "react-icons/gr";
+// import { GrClose } from "react-icons/gr";
 
 const SideDrawer = ({ setSideDrawer }) => {
   useEffect(() => {

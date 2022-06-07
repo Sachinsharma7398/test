@@ -1,21 +1,53 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./About.css";
 import HorseSvg from "../../assets/svgs/horse.svg";
 import PersonSvg from "../../assets/svgs/person.svg";
 import HeartSvg from "../../assets/svgs/heart.svg";
 import PencilSvg from "../../assets/svgs/pencil.svg";
-import Countup from 'react-countup'
+import Countup from "react-countup";
+import { getProject, getProjectApiCall } from "../../api/getproject";
 
 const About = () => {
+  const [projectData,setProjectData] = useState({
+    portfolio_projects:"",
+    community_members:"",
+    private_investment:"",
+    strategic_partners:"",
+  })
+  useEffect(() => {
+    getProjectFunction();
+  }, []);
+
+  const getProjectFunction = async () => {
+    try {
+      const {data} = await getProjectApiCall();
+      setProjectData({
+        portfolio_projects:data.portfolio_projects,
+        community_members:data.community_members,
+        private_investment:data.private_investment,
+        strategic_partners:data.strategic_partners,
+      })
+    } catch (e) {
+      console.log("error while fetching project")
+    }
+  };
+
+  console.log(projectData,"project data")
+
   return (
-    <div className="about-container w-100 d-flex align-items-center justify-content-center flex-column" id="about">
+    <div
+      className="about-container w-000 d-flex align-items-center justify-content-center flex-column"
+      id="about"
+    >
       <div className="about-heading text-color-white">
         Early stage private venture capital fund investing into the best
         blockchain projects in the emerging digital asset economy.
       </div>
       <div className="about-count-container text-center row text-color-white">
         <div className="col-lg-3  col-sm-6 col-6 col-md-6 about-count-item d-flex justify-content-center align-items-center flex-column">
-          <div className="abount-count-item-number"><Countup duration={7} end ={150}/>+</div>
+          <div className="abount-count-item-number">
+            <Countup duration={7} end={projectData.portfolio_projects || 0} />+
+          </div>
           <div
             className="abount-count-item-heading"
             style={{ marginTop: "5px" }}
@@ -25,17 +57,23 @@ const About = () => {
           <div className="abount-count-item-heading bottom-space">Projects</div>
         </div>
         <div className=" col-sm-6 col-6 col-lg-3 col-md-6 about-count-item d-flex justify-content-center align-items-center flex-column">
-          <div className="abount-count-item-number"><Countup duration={7} end ={200}/>+</div>
+          <div className="abount-count-item-number">
+            <Countup duration={7} end={projectData.private_investment || 0} />+
+          </div>
           <div
             className="abount-count-item-heading"
             style={{ marginTop: "5px" }}
           >
             Private
           </div>
-          <div className="abount-count-item-heading bottom-space">Investments</div>
+          <div className="abount-count-item-heading bottom-space">
+            Investments
+          </div>
         </div>
         <div className="col-sm-6 col-6 col-lg-3 col-md-6 about-count-item d-flex justify-content-center align-items-center flex-column">
-          <div className="abount-count-item-number"><Countup duration={7} end ={190}/>+</div>
+          <div className="abount-count-item-number">
+            <Countup duration={7} end={projectData.community_members || 0} />+
+          </div>
           <div
             className="abount-count-item-heading"
             style={{ marginTop: "5px" }}
@@ -45,7 +83,9 @@ const About = () => {
           <div className="abount-count-item-heading bottom-space">Members</div>
         </div>
         <div className="col-lg-3 col-sm-6 col-6 col-md-6  about-count-item d-flex justify-content-center align-items-center flex-column">
-          <div className="abount-count-item-number"><Countup duration={7} end ={237}/>+</div>
+          <div className="abount-count-item-number">
+            <Countup duration={7} end={projectData.strategic_partners || 0} />+
+          </div>
           <div
             className="abount-count-item-heading"
             style={{ marginTop: "5px" }}
@@ -61,17 +101,16 @@ const About = () => {
       <p className="text-color-white about-para">
         Marjan Capital is a private venture capital fund based out of United
         Arab Emirates with keen focus on investments around emerging
-        digital-tech & blockchain projects across the globe.​ 
+        digital-tech & blockchain projects across the globe.​
       </p>
       <p className="text-color-white about-para">
-      At Marjan, we are
-        very excited about the future growth of blockchain technologies & its
-        evolving ecosystem. ​We actively invest in early-stage blockchain
-        projects & are always looking for the next big idea. 
+        At Marjan, we are very excited about the future growth of blockchain
+        technologies & its evolving ecosystem. ​We actively invest in
+        early-stage blockchain projects & are always looking for the next big
+        idea.
       </p>
       <p className="text-color-white about-para">
-      Send us your
-        project details on fund@marjan.capital
+        Send us your project details on fund@marjan.capital
       </p>
       {/* <div className="row about-details-container text-color-white">
         <div className="col-lg-3 about-detail-item d-flex flex-column justify-content-center align-items-center">

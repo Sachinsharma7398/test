@@ -1,107 +1,53 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Team.css";
 
 import portfolioItemImage from "../../assets/images/portfolioItem.jpeg";
-import team1 from "../../assets/images/team1.jpg";
-import up from "../../assets/images/up.jpg";
-import girl from "../../assets/images/girl.jpg";
-import long from "../../assets/images/long.jpg";
 import { FaTelegramPlane } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { getTeamPersonsApiCall } from "../../api/getTeam";
 
 const Team = () => {
+
+  const [teamMembers,setTeamMembers] = useState([])
+
+  useEffect(()=>{
+    getTeamPersons();
+  },[])
+
+  const getTeamPersons=async()=>{
+      try{
+        const {data}  = await getTeamPersonsApiCall();
+        setTeamMembers(data.profile_list)
+      }catch(e){}
+  }
+
+  const opennewtab = (url) => {
+    window.open(url);
+  };
+
+
+
   return (
     <div className="perfomers-section" id="team">
       <div className="perfomers-heading text-color-white">Our team</div>
       <div className="teams-items-container d-flex   text-color-white">
-        <div className="teamItem">
+       {teamMembers.length > 0 && teamMembers.map((item,index)=>{
+         return(
+          <div className="teamItem" key={index}>
           <div className="teamItemImg">
-          <img src={team1} alt="text" />
+          <img src={`data:image/png;base64,${item.image}`} alt="text" />
           </div>
-          <h2 className="name"  >Rahul sharma</h2>
-          <h2 className="post">Manager</h2>
+          <h2 className="name"  >{item?.name}</h2>
+          <h2 className="post">{item?.position}</h2>
           <div className="tele">
-            <FaTelegramPlane className="teleIcon icon" size={28} color="#ffffff" />
-            <MdEmail size={28} className="icon" color="#ffffff" />
+            {item?.telegram_profile && <FaTelegramPlane onClick={()=>{opennewtab(item.telegram_profile)}} className="teleIcon icon" size={28} color="#ffffff"/>}
+            {item.email_id && <a href={`mailto:${item.email_id}`}><MdEmail size={28}  className="icon" color="#ffffff" /></a>}
           </div>
         </div>
-        <div className="teamItem">
-          <div className="teamItemImg">
-          <img src={up} alt="text" />
-          </div>
-          <h2 className="name" >emran</h2>
-          <h2 className="post">Manager</h2>
-          <div className="tele">
-            <FaTelegramPlane className="teleIcon" size={28} color="#ffffff" />
-            <MdEmail size={28} color="#ffffff" />
-          </div>
-        </div>
-        <div className="teamItem">
-          <div className="teamItemImg">
-          <img src={long} alt="text" />
-          </div>
-          <h2 className="name" >katty</h2>
-          <h2 className="post">Manager</h2>
-          <div className="tele">
-            <FaTelegramPlane className="teleIcon" size={28} color="#ffffff" />
-            <MdEmail size={28} color="#ffffff" />
-          </div>
-        </div>
-        <div className="teamItem">
-          <div className="teamItemImg">
-          <img src={girl} alt="text" />
-          </div>
-          <h2 className="name" >julia</h2>
-          <h2 className="post">Manager</h2>
-          <div className="tele">
-            <FaTelegramPlane className="teleIcon" size={28} color="#ffffff" />
-            <MdEmail size={28} color="#ffffff" />
-          </div>
-        </div>
-        <div className="teamItem">
-          <div className="teamItemImg">
-          <img src={team1} alt="text" />
-          </div>
-          <h2 className="name" >Rahul sharma</h2>
-          <h2 className="post">Manager</h2>
-          <div className="tele">
-            <FaTelegramPlane className="teleIcon icon" size={28} color="#ffffff" />
-            <MdEmail size={28} className="icon" color="#ffffff" />
-          </div>
-        </div>
-        <div className="teamItem">
-          <div className="teamItemImg">
-          <img src={up} alt="text" />
-          </div>
-          <h2 className="name" >Rahul sharma</h2>
-          <h2 className="post">Manager</h2>
-          <div className="tele">
-            <FaTelegramPlane className="teleIcon" size={28} color="#ffffff" />
-            <MdEmail size={28} color="#ffffff" />
-          </div>
-        </div>
-        <div className="teamItem">
-          <div className="teamItemImg">
-          <img src={long} alt="text" />
-          </div>
-          <h2 className="name" >Rahul sharma</h2>
-          <h2 className="post">Manager</h2>
-          <div className="tele">
-            <FaTelegramPlane className="teleIcon" size={28} color="#ffffff" />
-            <MdEmail size={28} color="#ffffff" />
-          </div>
-        </div>
-        <div className="teamItem">
-          <div className="teamItemImg">
-          <img src={girl} alt="text" />
-          </div>
-          <h2 className="name" >Rahul sharma</h2>
-          <h2 className="post">Manager</h2>
-          <div className="tele">
-            <FaTelegramPlane className="teleIcon" size={28} color="#ffffff" />
-            <MdEmail size={28} color="#ffffff" />
-          </div>
-        </div>
+         )
+       }) }
+        
+        
      
       
        
