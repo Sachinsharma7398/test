@@ -46,7 +46,7 @@ const About = () => {
       <div className="about-count-container text-center row text-color-white">
         <div className="col-lg-3  col-sm-6 col-6 col-md-6 about-count-item d-flex justify-content-center align-items-center flex-column">
           <div className="abount-count-item-number">
-            <Countup duration={7} end={projectData.portfolio_projects || 0} />+
+            <Countup duration={7} end={projectData.portfolio_projects.split(" ")[0] || 0} />{projectData.portfolio_projects.split(" ")[1] }
           </div>
           <div
             className="abount-count-item-heading"
@@ -58,7 +58,7 @@ const About = () => {
         </div>
         <div className=" col-sm-6 col-6 col-lg-3 col-md-6 about-count-item d-flex justify-content-center align-items-center flex-column">
           <div className="abount-count-item-number">
-            <Countup duration={7} end={projectData.private_investment || 0} />+
+            <Countup duration={7} end={projectData.private_investment.split(" ")[0] || 0} />{projectData.portfolio_projects.split(" ")[1] }
           </div>
           <div
             className="abount-count-item-heading"
@@ -72,7 +72,7 @@ const About = () => {
         </div>
         <div className="col-sm-6 col-6 col-lg-3 col-md-6 about-count-item d-flex justify-content-center align-items-center flex-column">
           <div className="abount-count-item-number">
-            <Countup duration={7} end={projectData.community_members || 0} />+
+            <Countup duration={7} end={projectData.community_members.split(" ")[0] || 0} />{projectData.portfolio_projects.split(" ")[1] }
           </div>
           <div
             className="abount-count-item-heading"
@@ -84,7 +84,7 @@ const About = () => {
         </div>
         <div className="col-lg-3 col-sm-6 col-6 col-md-6  about-count-item d-flex justify-content-center align-items-center flex-column">
           <div className="abount-count-item-number">
-            <Countup duration={7} end={projectData.strategic_partners || 0} />+
+            <Countup duration={7} end={projectData.strategic_partners.split(" ")[0] || 0} />{projectData.portfolio_projects.split(" ")[1] }
           </div>
           <div
             className="abount-count-item-heading"
