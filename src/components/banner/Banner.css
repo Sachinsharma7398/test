@@ -2,7 +2,7 @@
     width: 100%;
     padding-top: 60px;
     height: 100vh;
-    background: url('./../../assets//images/bannerBg.jpg');
+    background: url('./../../assets//images/optiononetwo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -53,6 +53,9 @@
     }
   }
   @media  (max-width: 756px) {
+    .banner{
+      background-position: inherit;
+    }
     .banner-center > h1{
     font-size: 25px;
     

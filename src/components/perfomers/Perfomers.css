@@ -17,7 +17,6 @@
 
 .perfomers-items-container {
   width: 70%;
-  max-width: 1220px;
   margin: 0px auto;
   margin-top: 50px;
   gap: 21px;
@@ -25,12 +24,7 @@
   justify-content: center;
 }
 
-.perfomers-item {
-  border: 2px solid hsla(0, 0%, 100%, 0.2);
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 30px;
-}
+
 .portfolioItem{
   width: 250px;
   height: 180px;
@@ -42,6 +36,8 @@
   width: 100%;
   height: 100%;
   border-radius: 12px ;
+  border: 2px solid black;
+
 }
 
 .perfomers-item-img-container {

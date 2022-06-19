@@ -1,5 +1,5 @@
 .parentGet {
-  background: url("./../../assets//images/formBackground.jpg");
+  background: url("./../../assets//images/galaxyonetwo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -40,4 +40,8 @@
   .get-in-touch {
     padding-top: 10px;
   }
+}
+@media (max-width: 756px) {
+
+.parentGet{background-position: inherit;}
 }

@@ -29,6 +29,7 @@ const Perfomers = () => {
       <div className="perfomers-items-container d-flex   text-color-white">
         {portFolioItem.length > 0 &&
           portFolioItem.map((item, index) => {
+            console.log(item.url,index);
             return (
               <div className="portfolioItem" onClick={()=>{opennewtab(item?.url)}} style={{cursor:"pointer"}}>
                 <img src={`data:image/png;base64,${item.image}`} alt="text" />

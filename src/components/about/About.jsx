@@ -52,9 +52,8 @@ const About = () => {
             className="abount-count-item-heading"
             style={{ marginTop: "5px" }}
           >
-            PORTFOLIO
+           Return On Capital Deployed
           </div>
-          <div className="abount-count-item-heading bottom-space">Projects</div>
         </div>
         <div className=" col-sm-6 col-6 col-lg-3 col-md-6 about-count-item d-flex justify-content-center align-items-center flex-column">
           <div className="abount-count-item-number">
@@ -64,11 +63,9 @@ const About = () => {
             className="abount-count-item-heading"
             style={{ marginTop: "5px" }}
           >
-            Private
+            Total Investments Invested
           </div>
-          <div className="abount-count-item-heading bottom-space">
-            Investments
-          </div>
+      
         </div>
         <div className="col-sm-6 col-6 col-lg-3 col-md-6 about-count-item d-flex justify-content-center align-items-center flex-column">
           <div className="abount-count-item-number">
@@ -78,9 +75,8 @@ const About = () => {
             className="abount-count-item-heading"
             style={{ marginTop: "5px" }}
           >
-            Community
+          Average Investments Size
           </div>
-          <div className="abount-count-item-heading bottom-space">Members</div>
         </div>
         <div className="col-lg-3 col-sm-6 col-6 col-md-6  about-count-item d-flex justify-content-center align-items-center flex-column">
           <div className="abount-count-item-number">
@@ -89,10 +85,8 @@ const About = () => {
           <div
             className="abount-count-item-heading"
             style={{ marginTop: "5px" }}
-          >
-            Strategic
+          >Assets Under Management
           </div>
-          <div className="abount-count-item-heading bottom-space">Partners</div>
         </div>
       </div>
       <div className="about-mh-ventures text-center text-color-white">
