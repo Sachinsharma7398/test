@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./Perfomers.css";
-import portfolioItemImage from "../../assets/images/portfolioItem.jpeg";
 import { getPortfolioApiCall } from "../../api/getPortfolio";
 
 const Perfomers = () => {

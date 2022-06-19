@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Team.css";
 
-import portfolioItemImage from "../../assets/images/portfolioItem.jpeg";
 import { FaTelegramPlane } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { getTeamPersonsApiCall } from "../../api/getTeam";
